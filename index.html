@@ -1,370 +1,335 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Neeraj Suthar's personal portfolio showcasing web development skills, projects and learning journey.">
-
     <meta name="theme-color" content="#0b1020">
+    <meta name="description" content="Neeraj Suthar's portfolio showcasing web development projects, skills, and services.">
 
     <title>Neeraj Suthar | Web Developer Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container nav-container">
-            <a href="#home" class="logo">Neeraj<span>.</span></a>
+<header class="site-header">
+    <div class="container nav-wrap">
+        <a href="#home" class="logo">Neeraj<span>.</span></a>
 
-            <nav class="nav-links" aria-label="Main navigation">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#goals">Goals</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
 
-    <main>
+<main>
+    <section class="hero section" id="home">
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <p class="eyebrow">STUDENT · ASPIRING WEB DEVELOPER</p>
 
-        <!-- Hero -->
-        <section id="home" class="hero section">
-            <div class="container hero-content">
-
-                <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
-
-                <h1>
-                    Hi, I'm <span class="highlight">Neeraj Suthar</span>
-                </h1>
-
-                <h2>Student & Aspiring Web Developer</h2>
+                <h1>Turning ideas into <span class="gradient-text">useful websites.</span></h1>
 
                 <p class="hero-description">
-                    I am learning web development and building useful,
-                    simple and student-friendly websites. My goal is to
-                    turn ideas into practical digital projects.
+                    Hi, I'm Neeraj Suthar. I'm learning web development
+                    by building practical websites with HTML, CSS and
+                    JavaScript. I enjoy creating simple digital tools
+                    that solve everyday problems.
                 </p>
 
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        Explore My Projects
-                    </a>
-
-                    <a href="#contact" class="btn btn-outline">
-                        Contact Me
-                    </a>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#projects">Explore My Work ↘</a>
+                    <a class="btn btn-secondary"
+                       href="https://github.com/nirajsuthar661"
+                       target="_blank"
+                       rel="noopener noreferrer">GitHub Profile ↗</a>
                 </div>
 
-                <a
-                    class="github-link"
-                    href="https://github.com/nirajsuthar661"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Visit My GitHub Profile ↗
-                </a>
-
-            </div>
-        </section>
-
-        <!-- About -->
-        <section id="about" class="section">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">GET TO KNOW ME</p>
-                    <h2>About <span class="highlight">Me</span></h2>
-                </div>
-
-                <div class="about-card">
-                    <p>
-                        Hello! I'm Neeraj Suthar, a student interested
-                        in technology, website creation and learning new
-                        digital skills.
-                    </p>
-
-                    <p>
-                        I am building projects using HTML, CSS and
-                        JavaScript. I believe that the best way to learn
-                        is to build real projects, test them and improve
-                        them step by step.
-                    </p>
-
-                    <p>
-                        I am currently working on improving my coding
-                        skills and creating useful websites for students
-                        and small businesses.
-                    </p>
+                <div class="hero-note">
+                    <span class="status-dot"></span>
+                    Learning, building and improving every day
                 </div>
             </div>
-        </section>
 
-        <!-- Skills -->
-        <section id="skills" class="section section-alt">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">WHAT I'M LEARNING</p>
-                    <h2>My <span class="highlight">Skills</span></h2>
-                    <p>Technologies I am learning and practising.</p>
+            <aside class="hero-panel" aria-label="Portfolio introduction">
+                <div class="panel-top">
+                    <span class="panel-dot"></span>
+                    <span class="panel-dot"></span>
+                    <span class="panel-dot"></span>
+                    <span class="panel-label">MY JOURNEY</span>
                 </div>
 
-                <div class="card-grid">
+                <div class="panel-content">
+                    <p class="panel-kicker">CURRENT FOCUS</p>
+                    <h2>Build. Learn. Improve.</h2>
+                    <p>
+                        Creating beginner-friendly web projects and
+                        strengthening my front-end development skills.
+                    </p>
 
-                    <article class="card">
-                        <div class="card-icon">🌐</div>
-                        <h3>HTML</h3>
-                        <p>
-                            Creating the structure and content of
-                            web pages.
-                        </p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon">🎨</div>
-                        <h3>CSS</h3>
-                        <p>
-                            Styling websites with layouts, colours
-                            and responsive designs.
-                        </p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon">⚙️</div>
-                        <h3>JavaScript</h3>
-                        <p>
-                            Learning to add interactive features
-                            and useful functionality.
-                        </p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon">📱</div>
-                        <h3>Responsive Design</h3>
-                        <p>
-                            Making websites adapt to different
-                            screen sizes.
-                        </p>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects -->
-        <section id="projects" class="section">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">MY WORK</p>
-                    <h2>Featured <span class="highlight">Projects</span></h2>
-                    <p>Websites I have built or am currently developing.</p>
-                </div>
-
-                <div class="card-grid">
-
-                    <article class="card project-card">
-                        <div class="project-top">
-                            <span class="project-number">PROJECT 01</span>
-                            <span class="project-emoji">🎓</span>
+                    <div class="focus-item">
+                        <span>01</span>
+                        <div>
+                            <strong>Learn the fundamentals</strong>
+                            <small>HTML · CSS · JavaScript</small>
                         </div>
+                    </div>
 
+                    <div class="focus-item">
+                        <span>02</span>
+                        <div>
+                            <strong>Build real projects</strong>
+                            <small>Practice through creation</small>
+                        </div>
+                    </div>
+
+                    <div class="focus-item">
+                        <span>03</span>
+                        <div>
+                            <strong>Help solve problems</strong>
+                            <small>Useful and accessible websites</small>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="container narrow">
+            <div class="section-heading">
+                <p class="eyebrow">A LITTLE ABOUT ME</p>
+                <h2>Learning with a <span class="gradient-text">purpose.</span></h2>
+            </div>
+
+            <div class="about-card">
+                <p>
+                    I'm Neeraj Suthar, a student exploring web development
+                    and technology. I believe practical projects are a
+                    valuable way to understand coding and build confidence.
+                </p>
+                <p>
+                    My current focus is improving my HTML, CSS and
+                    JavaScript skills, making websites responsive, and
+                    learning how to turn an idea into a working website.
+                </p>
+                <a class="text-link" href="#projects">See what I'm building →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-heading">
+                <p class="eyebrow">MY TOOLKIT</p>
+                <h2>Skills I'm <span class="gradient-text">developing.</span></h2>
+                <p>My current learning areas and practical experience.</p>
+            </div>
+
+            <div class="card-grid">
+                <article class="feature-card">
+                    <div class="icon-box">⌘</div>
+                    <h3>HTML</h3>
+                    <p>Page structure, semantic elements and accessible content.</p>
+                    <span class="skill-label">Front-end fundamentals</span>
+                </article>
+
+                <article class="feature-card">
+                    <div class="icon-box">✳</div>
+                    <h3>CSS</h3>
+                    <p>Layouts, typography, visual styling and responsive design.</p>
+                    <span class="skill-label">UI and layout</span>
+                </article>
+
+                <article class="feature-card">
+                    <div class="icon-box">JS</div>
+                    <h3>JavaScript</h3>
+                    <p>Interactive elements, input validation and simple tools.</p>
+                    <span class="skill-label">Web interactivity</span>
+                </article>
+
+                <article class="feature-card">
+                    <div class="icon-box">↗</div>
+                    <h3>GitHub Pages</h3>
+                    <p>Publishing static websites and managing project files.</p>
+                    <span class="skill-label">Deployment practice</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-heading">
+                <p class="eyebrow">SELECTED WORK</p>
+                <h2>Projects I've <span class="gradient-text">built.</span></h2>
+                <p>Explore my work and follow my learning journey.</p>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-visual visual-blue">
+                        <span class="visual-symbol">01</span>
+                        <span class="visual-caption">STUDENT TOOLS</span>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-type">LIVE PROJECT</span>
+                            <span class="live-dot"></span>
+                        </div>
                         <h3>Student Utility Hub</h3>
-
                         <p>
-                            A student productivity website featuring
-                            percentage and grade calculators, a study
-                            planner, exam countdown, study timer and
-                            quick notes.
+                            A student-focused website with study utilities
+                            such as calculators, a planner, exam countdown,
+                            timer and notes.
                         </p>
-
                         <div class="tags">
                             <span>HTML</span>
                             <span>CSS</span>
                             <span>JavaScript</span>
                         </div>
+                        <a class="project-link"
+                           href="https://nirajsuthar0710.github.io/student-utility-hub/"
+                           target="_blank"
+                           rel="noopener noreferrer">Open Live Website ↗</a>
+                    </div>
+                </article>
 
-                        <a
-                            class="project-link"
-                            href="https://nirajsuthar0710.github.io/student-utility-hub/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            View Live Project ↗
-                        </a>
-                    </article>
-
-                    <article class="card project-card">
-                        <div class="project-top">
-                            <span class="project-number">PROJECT 02</span>
-                            <span class="project-emoji">💻</span>
+                <article class="project-card">
+                    <div class="project-visual visual-purple">
+                        <span class="visual-symbol">02</span>
+                        <span class="visual-caption">PERSONAL BRAND</span>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-type">CURRENT PROJECT</span>
                         </div>
-
                         <h3>Personal Portfolio</h3>
-
                         <p>
-                            My personal website to showcase my skills,
-                            learning journey, projects and contact
-                            information.
+                            This website introduces my skills, projects,
+                            learning goals and ways to connect with me.
                         </p>
-
                         <div class="tags">
                             <span>HTML</span>
                             <span>CSS</span>
                             <span>JavaScript</span>
                         </div>
+                        <a class="project-link" href="#home">You're viewing it ↗</a>
+                    </div>
+                </article>
 
-                        <span class="project-status">
-                            Currently Building
-                        </span>
-                    </article>
-
-                    <article class="card project-card">
-                        <div class="project-top">
-                            <span class="project-number">UPCOMING</span>
-                            <span class="project-emoji">🚀</span>
+                <article class="project-card">
+                    <div class="project-visual visual-green">
+                        <span class="visual-symbol">03</span>
+                        <span class="visual-caption">NEXT CHALLENGE</span>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-type">PLANNED</span>
                         </div>
-
                         <h3>Small Business Website</h3>
-
                         <p>
-                            A planned website project to help local
-                            shops and small businesses present their
-                            services online.
+                            A planned project to practise presenting a
+                            local business, its services and contact details.
                         </p>
-
                         <div class="tags">
                             <span>Web Design</span>
                             <span>Responsive UI</span>
                         </div>
-
-                        <span class="project-status">
-                            Planned
-                        </span>
-                    </article>
-
-                </div>
-
-                <div class="github-cta">
-                    <p>Want to explore my code and future projects?</p>
-
-                    <a
-                        href="https://github.com/nirajsuthar661"
-                        class="btn btn-primary"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Explore My GitHub ↗
-                    </a>
-                </div>
+                        <span class="project-link muted-link">In planning</span>
+                    </div>
+                </article>
             </div>
-        </section>
 
-        <!-- Goals -->
-        <section id="goals" class="section section-alt">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">MY JOURNEY</p>
-                    <h2>Future <span class="highlight">Goals</span></h2>
-                </div>
-
-                <div class="card-grid">
-
-                    <article class="card">
-                        <div class="card-icon">📚</div>
-                        <h3>Keep Learning</h3>
-                        <p>
-                            Improve my web development knowledge
-                            through regular practice.
-                        </p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon">🛠️</div>
-                        <h3>Build Projects</h3>
-                        <p>
-                            Create practical websites that solve
-                            real problems.
-                        </p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon">🤝</div>
-                        <h3>Work With Clients</h3>
-                        <p>
-                            Learn how to understand requirements
-                            and build websites for businesses.
-                        </p>
-                    </article>
-
-                </div>
+            <div class="center-action">
+                <a class="btn btn-secondary"
+                   href="https://github.com/nirajsuthar661"
+                   target="_blank"
+                   rel="noopener noreferrer">Explore More on GitHub ↗</a>
             </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact" class="section">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">LET'S CONNECT</p>
-                    <h2>Contact <span class="highlight">Me</span></h2>
-
-                    <p>
-                        Have a project idea or want to connect?
-                        You can find me on GitHub.
-                    </p>
-                </div>
-
-                <div class="contact-card">
-                    <div class="contact-icon">💬</div>
-
-                    <h3>Let's Build Something Useful</h3>
-
-                    <p>
-                        I'm learning, creating and improving one
-                        project at a time.
-                    </p>
-
-                    <a
-                        href="https://github.com/nirajsuthar661"
-                        class="btn btn-primary"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Visit My GitHub Profile ↗
-                    </a>
-
-                    <!-- Add your email here later if you want -->
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <a href="#home" class="logo">Neeraj<span>.</span></a>
-
-            <p class="copyright">
-                © 2026 Neeraj Suthar. Built with care.
-            </p>
-
-            <a
-                href="https://github.com/nirajsuthar661"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                GitHub ↗
-            </a>
         </div>
-    </footer>
+    </section>
 
-    <script src="script.js"></script>
+    <section class="section section-alt" id="services">
+        <div class="container">
+            <div class="section-heading">
+                <p class="eyebrow">WHAT I'M WORKING TOWARDS</p>
+                <h2>How I can <span class="gradient-text">help.</span></h2>
+                <p>Areas I'm practising and developing through projects.</p>
+            </div>
+
+            <div class="card-grid">
+                <article class="feature-card">
+                    <div class="icon-box">01</div>
+                    <h3>Simple Websites</h3>
+                    <p>Practising clean, informative websites for ideas and projects.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="icon-box">02</div>
+                    <h3>Responsive Layouts</h3>
+                    <p>Learning to make pages work across desktop and mobile screens.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="icon-box">03</div>
+                    <h3>Student Tools</h3>
+                    <p>Building small browser-based tools that support everyday study.</p>
+                </article>
+            </div>
+
+            <p class="disclaimer">
+                I'm growing my skills through practice projects. Services and
+                availability should be discussed before starting any work.
+            </p>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="contact-card">
+                <p class="eyebrow">LET'S CONNECT</p>
+                <h2>Have an idea? <span class="gradient-text">Let's talk.</span></h2>
+                <p>
+                    Want to explore my work or discuss a website idea?
+                    Visit my GitHub profile to see my projects and code.
+                </p>
+
+                <div class="contact-actions">
+                    <a class="btn btn-primary"
+                       href="https://github.com/nirajsuthar661"
+                       target="_blank"
+                       rel="noopener noreferrer">Connect on GitHub ↗</a>
+
+                    <a class="btn btn-secondary"
+                       href="https://github.com/nirajsuthar661?tab=repositories"
+                       target="_blank"
+                       rel="noopener noreferrer">Browse Repositories</a>
+                </div>
+                <p class="contact-note">
+                    No email address is published on this page.
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <a href="#home" class="logo">Neeraj<span>.</span></a>
+        <p class="copyright">© 2026 Neeraj Suthar. Built with care.</p>
+        <a href="https://github.com/nirajsuthar661"
+           target="_blank"
+           rel="noopener noreferrer">GitHub ↗</a>
+    </div>
+</footer>
 
 </body>
 </html>
-```
