@@ -1,14 +1,13 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Keep the footer year current.
-    const copyright = document.querySelector(".copyright");
+    // Automatically update the footer year
+    const yearElement = document.getElementById("current-year");
 
-    if (copyright) {
-        copyright.textContent =
-            `© ${new Date().getFullYear()} Neeraj Suthar. Built with care.`;
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
     }
 
-    // Highlight the navigation link for the visible section.
+    // Highlight the active navigation link
     const sections = document.querySelectorAll("main section[id]");
     const navLinks = document.querySelectorAll(".nav-links a");
 
@@ -16,19 +15,15 @@ document.addEventListener("DOMContentLoaded", function () {
         let currentSection = "home";
 
         sections.forEach(function (section) {
-            const sectionTop =
-                section.getBoundingClientRect().top + window.scrollY - 140;
+            const sectionTop = section.getBoundingClientRect().top;
 
-            if (window.scrollY >= sectionTop) {
+            if (sectionTop <= 150) {
                 currentSection = section.id;
             }
         });
 
         navLinks.forEach(function (link) {
-            const isActive =
-                link.getAttribute("href") === `#${currentSection}`;
-
-            if (isActive) {
+            if (link.getAttribute("href") === "#" + currentSection) {
                 link.setAttribute("aria-current", "location");
             } else {
                 link.removeAttribute("aria-current");
@@ -36,6 +31,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    window.addEventListener("scroll", updateActiveLink, { passive: true });
+    window.addEventListener("scroll", updateActiveLink, {
+        passive: true
+    });
+
+    window.addEventListener("resize", updateActiveLink);
+
     updateActiveLink();
 });
