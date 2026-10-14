@@ -1,17 +1,14 @@
-```javascript
-// ===== Portfolio JavaScript =====
 
 document.addEventListener("DOMContentLoaded", function () {
-
-    // Automatically update copyright year
+    // Keep the footer year current.
     const copyright = document.querySelector(".copyright");
 
     if (copyright) {
-        copyright.innerHTML =
-            `&copy; ${new Date().getFullYear()} My Portfolio. Built with care.`;
+        copyright.textContent =
+            `© ${new Date().getFullYear()} Neeraj Suthar. Built with care.`;
     }
 
-    // Highlight the navigation link for the current section
+    // Highlight the navigation link for the visible section.
     const sections = document.querySelectorAll("main section[id]");
     const navLinks = document.querySelectorAll(".nav-links a");
 
@@ -19,7 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
         let currentSection = "home";
 
         sections.forEach(function (section) {
-            const sectionTop = section.offsetTop - 120;
+            const sectionTop =
+                section.getBoundingClientRect().top + window.scrollY - 140;
 
             if (window.scrollY >= sectionTop) {
                 currentSection = section.id;
@@ -38,8 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    window.addEventListener("scroll", updateActiveLink);
+    window.addEventListener("scroll", updateActiveLink, { passive: true });
     updateActiveLink();
-
 });
-```
