@@ -2,245 +2,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neeraj Suthar | Web Developer Portfolio</title>
-    <meta name="description" content="Explore Neeraj Suthar's portfolio and web development projects.">
-    <meta name="theme-color" content="#080d1a">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Neeraj Suthar - Student and aspiring web developer. Explore my web projects, skills and learning journey.">
+  <meta name="theme-color" content="#080b14">
+  <title>Neeraj Suthar | Web Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <nav class="container" aria-label="Main navigation">
-        <a class="logo" href="#home">Neeraj<span> Suthar.</span></a>
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#goals">Goals</a>
-            <a href="#contact">Contact</a>
-        </div>
+  <div class="page-glow"></div>
+
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">NS<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#contact" class="nav-contact">Contact Me ↗</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
-<main>
-
-<section id="home" class="hero">
-    <div class="container hero-content">
-        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
-        <h1>Hi, I'm <span>Neeraj Suthar</span></h1>
-        <h2>Student &amp; Aspiring Web Developer</h2>
-        <p>
-            I'm learning web development and building useful,
-            user-friendly websites one project at a time.
-            Explore my projects and learning journey.
-        </p>
-        <div class="hero-actions">
-            <a class="btn" href="#projects">Explore My Projects ↗</a>
-            <a class="btn btn-secondary" href="#contact">Get In Touch</a>
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-content reveal">
+        <div class="availability">
+          <span class="status-dot"></span>
+          STUDENT · ASPIRING WEB DEVELOPER
         </div>
-        <a class="github-text" href="https://github.com/nirajsuthar0710"
-           target="_blank" rel="noopener noreferrer">
-            Visit My GitHub Profile ↗
-        </a>
-    </div>
-</section>
 
-<section id="about">
-    <div class="container">
+        <p class="eyebrow">WELCOME TO MY DIGITAL SPACE</p>
+        <h1>Hi, I'm <span class="gradient-text">Neeraj Suthar.</span></h1>
+        <h2>I build <span id="changingText">modern websites.</span></h2>
+
+        <p class="hero-description">
+          I'm a student exploring the world of web development.
+          I enjoy turning ideas into useful, creative and user-friendly websites.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Explore My Work <span>↗</span></a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+
+        <a class="github-link" href="https://github.com/nirajsuthar0710" target="_blank" rel="noopener noreferrer">
+          <span>⌘</span> Explore my GitHub profile ↗
+        </a>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="profile-card">
+          <div class="profile-top">
+            <span class="window-dot"></span>
+            <span class="window-dot"></span>
+            <span class="window-dot"></span>
+            <span class="profile-label">MY PROFILE</span>
+          </div>
+          <div class="profile-avatar">NS<span>.</span></div>
+          <h3>Neeraj Suthar</h3>
+          <p>Student & Web Developer</p>
+          <div class="profile-divider"></div>
+          <div class="profile-stats">
+            <div><strong>05</strong><span>Projects</span></div>
+            <div><strong>03</strong><span>Core Skills</span></div>
+            <div><strong>∞</strong><span>Ideas</span></div>
+          </div>
+          <div class="code-chip">&lt; Building my future /&gt;</div>
+        </div>
+        <div class="floating-tag tag-html">HTML5</div>
+        <div class="floating-tag tag-css">CSS3</div>
+        <div class="floating-tag tag-js">JS</div>
+      </div>
+    </section>
+
+    <section class="stats-strip container reveal">
+      <div><strong>05+</strong><span>Website Projects</span></div>
+      <div><strong>03</strong><span>Core Technologies</span></div>
+      <div><strong>100%</strong><span>Learning Mindset</span></div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading reveal">
         <p class="eyebrow">GET TO KNOW ME</p>
-        <h2>About Me</h2>
-        <div class="about-content">
-            <p>
-                Hello! I'm Neeraj Suthar, a student exploring
-                web development and technology. I enjoy learning
-                how websites work and turning ideas into projects.
-            </p>
-            <p>
-                I'm practising HTML, CSS and JavaScript.
-                My goal is to strengthen my skills, build useful
-                websites and improve with every project.
-            </p>
-        </div>
-    </div>
-</section>
+        <h2>About <span class="gradient-text">Me</span></h2>
+        <p>A little introduction about who I am and what I do.</p>
+      </div>
 
-<section id="skills">
-    <div class="container">
+      <div class="about-grid">
+        <div class="about-main glass-card reveal">
+          <span class="card-icon">✦</span>
+          <h3>My Journey</h3>
+          <p>
+            Hello! I'm Neeraj Suthar, a student passionate about technology
+            and creative problem-solving. I'm exploring web development
+            by building practical website projects.
+          </p>
+          <p>
+            I enjoy experimenting with layouts, learning how websites work
+            and improving my projects step by step. Every project is a new
+            opportunity to learn something.
+          </p>
+        </div>
+
+        <div class="about-side glass-card reveal">
+          <span class="card-icon">🎯</span>
+          <h3>My Focus</h3>
+          <p>Learn the fundamentals, build useful projects and keep improving.</p>
+          <div class="focus-tags">
+            <span>Creativity</span><span>Consistency</span><span>Learning</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-heading reveal">
         <p class="eyebrow">WHAT I'M LEARNING</p>
-        <h2>My Skills</h2>
-        <p class="section-intro">Technologies and skills I'm practising through projects.</p>
+        <h2>My <span class="gradient-text">Skills</span></h2>
+        <p>Technologies and abilities I'm practising through projects.</p>
+      </div>
 
-        <div class="skills-grid">
-            <article class="skill-card">
-                <div class="skill-icon">🌐</div>
-                <h3>HTML</h3>
-                <p>Building the structure and content of web pages.</p>
-            </article>
-            <article class="skill-card">
-                <div class="skill-icon">🎨</div>
-                <h3>CSS</h3>
-                <p>Creating layouts, colours and responsive designs.</p>
-            </article>
-            <article class="skill-card">
-                <div class="skill-icon">⚡</div>
-                <h3>JavaScript</h3>
-                <p>Learning to add interaction and useful features.</p>
-            </article>
-            <article class="skill-card">
-                <div class="skill-icon">📱</div>
-                <h3>Responsive Design</h3>
-                <p>Practising layouts for different screen sizes.</p>
-            </article>
-            <article class="skill-card">
-                <div class="skill-icon">🧩</div>
-                <h3>Problem Solving</h3>
-                <p>Learning by testing, debugging and improving code.</p>
-            </article>
-            <article class="skill-card">
-                <div class="skill-icon">🚀</div>
-                <h3>Continuous Learning</h3>
-                <p>Building projects to strengthen my knowledge.</p>
-            </article>
-        </div>
-    </div>
-</section>
+      <div class="skills-grid">
+        <article class="skill-card glass-card reveal">
+          <div class="skill-icon html-icon">5</div>
+          <h3>HTML</h3>
+          <p>Building the structure and content of web pages.</p>
+          <span class="skill-level">Learning & Practising</span>
+        </article>
+        <article class="skill-card glass-card reveal">
+          <div class="skill-icon css-icon">✦</div>
+          <h3>CSS</h3>
+          <p>Creating layouts, visual styles and responsive designs.</p>
+          <span class="skill-level">Learning & Practising</span>
+        </article>
+        <article class="skill-card glass-card reveal">
+          <div class="skill-icon js-icon">JS</div>
+          <h3>JavaScript</h3>
+          <p>Exploring interactions and useful website features.</p>
+          <span class="skill-level">Learning & Practising</span>
+        </article>
+        <article class="skill-card glass-card reveal">
+          <div class="skill-icon responsive-icon">▣</div>
+          <h3>Responsive Design</h3>
+          <p>Practising layouts for phones, tablets and desktops.</p>
+          <span class="skill-level">Developing</span>
+        </article>
+        <article class="skill-card glass-card reveal">
+          <div class="skill-icon problem-icon">⌘</div>
+          <h3>Problem Solving</h3>
+          <p>Testing, debugging and finding ways to improve projects.</p>
+          <span class="skill-level">Developing</span>
+        </article>
+        <article class="skill-card glass-card reveal">
+          <div class="skill-icon learn-icon">↗</div>
+          <h3>Continuous Learning</h3>
+          <p>Building projects and learning from each experience.</p>
+          <span class="skill-level">Always Improving</span>
+        </article>
+      </div>
+    </section>
 
-<section id="projects">
-    <div class="container">
+    <section class="section container" id="projects">
+      <div class="section-heading reveal">
         <p class="eyebrow">WHAT I'M BUILDING</p>
-        <h2>My Projects</h2>
-        <p class="section-intro">
-            A collection of website demos from my learning journey.
-        </p>
+        <h2>Featured <span class="gradient-text">Projects</span></h2>
+        <p>A collection of websites created during my learning journey.</p>
+      </div>
 
-        <div class="projects-grid">
+      <div class="projects-grid">
+        <article class="project-card glass-card reveal">
+          <div class="project-preview preview-student"><span>STUDENT</span><strong>Utility Hub.</strong><small>Tools for smarter study</small></div>
+          <div class="project-info">
+            <div class="project-meta"><span>PROJECT 01</span><span class="live-status">● LIVE</span></div>
+            <h3>Student Utility Hub</h3>
+            <p>A student-focused website featuring useful study tools and everyday learning utilities.</p>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://nirajsuthar0710.github.io/student-utility-hub/" target="_blank" rel="noopener noreferrer" class="project-link">Visit Live Website ↗</a>
+          </div>
+        </article>
 
-            <article class="project-card">
-                <div class="project-top">
-                    <span class="project-number">PROJECT 01</span>
-                    <span class="project-status">Live</span>
-                </div>
-                <h3>Student Utility Hub</h3>
-                <p>A student-focused website featuring useful study tools and everyday learning utilities.</p>
-                <div class="project-tags">
-                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                </div>
-                <a class="project-link" href="https://nirajsuthar0710.github.io/student-utility-hub/" target="_blank" rel="noopener noreferrer">Visit Live Website ↗</a>
-            </article>
+        <article class="project-card glass-card reveal">
+          <div class="project-preview preview-portfolio"><span>PERSONAL</span><strong>My Portfolio.</strong><small>My work, my journey</small></div>
+          <div class="project-info">
+            <div class="project-meta"><span>PROJECT 02</span><span class="live-status">● LIVE</span></div>
+            <h3>Personal Portfolio</h3>
+            <p>A personal website introducing me and showcasing my work and progress.</p>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="#home" class="project-link">You Are Here ↑</a>
+          </div>
+        </article>
 
-            <article class="project-card">
-                <div class="project-top">
-                    <span class="project-number">PROJECT 02</span>
-                    <span class="project-status">Live</span>
-                </div>
-                <h3>Personal Portfolio</h3>
-                <p>A personal website introducing me and showcasing my work and progress.</p>
-                <div class="project-tags">
-                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                </div>
-                <a class="project-link" href="https://nirajsuthar0710.github.io/my-portfolio/" target="_blank" rel="noopener noreferrer">Explore This Portfolio ↑</a>
-            </article>
+        <article class="project-card glass-card reveal">
+          <div class="project-preview preview-cafe"><span>ROYAL</span><strong>Café.</strong><small>Fresh taste, warm moments</small></div>
+          <div class="project-info">
+            <div class="project-meta"><span>PROJECT 03</span><span class="live-status">● LIVE</span></div>
+            <h3>Royal Cafe</h3>
+            <p>A cafe website concept with a stylish presentation and menu section.</p>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://nirajsuthar0710.github.io/royal-cafe/" target="_blank" rel="noopener noreferrer" class="project-link">Visit Live Website ↗</a>
+          </div>
+        </article>
 
-            <article class="project-card">
-                <div class="project-top">
-                    <span class="project-number">PROJECT 03</span>
-                    <span class="project-status">Live</span>
-                </div>
-                <h3>Royal Cafe</h3>
-                <p>A cafe website concept with a stylish presentation and menu section.</p>
-                <div class="project-tags">
-                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                </div>
-                <a class="project-link" href="https://nirajsuthar0710.github.io/royal-cafe/" target="_blank" rel="noopener noreferrer">Visit Live Website ↗</a>
-            </article>
+        <article class="project-card glass-card reveal">
+          <div class="project-preview preview-shop"><span>SHOP</span><strong>Ease.</strong><small>Simple online shopping</small></div>
+          <div class="project-info">
+            <div class="project-meta"><span>PROJECT 04</span><span class="live-status">● LIVE</span></div>
+            <h3>ShopEase</h3>
+            <p>An online store demo showcasing product cards and shopping interface features.</p>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://nirajsuthar0710.github.io/shopease/" target="_blank" rel="noopener noreferrer" class="project-link">Visit Live Website ↗</a>
+          </div>
+        </article>
 
-            <article class="project-card">
-                <div class="project-top">
-                    <span class="project-number">PROJECT 04</span>
-                    <span class="project-status">Live</span>
-                </div>
-                <h3>ShopEase</h3>
-                <p>An online store demo showcasing product cards and shopping interface features.</p>
-                <div class="project-tags">
-                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                </div>
-                <a class="project-link" href="https://nirajsuthar0710.github.io/shopease/" target="_blank" rel="noopener noreferrer">Visit Live Website ↗</a>
-            </article>
+        <article class="project-card glass-card reveal">
+          <div class="project-preview preview-agency"><span>TECH</span><strong>Start.</strong><small>Digital solutions</small></div>
+          <div class="project-info">
+            <div class="project-meta"><span>PROJECT 05</span><span class="live-status">● LIVE</span></div>
+            <h3>TechStart Agency</h3>
+            <p>A dark premium agency website concept featuring services, pricing and projects.</p>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://nirajsuthar0710.github.io/tech.agency/" target="_blank" rel="noopener noreferrer" class="project-link">Visit Live Website ↗</a>
+          </div>
+        </article>
+      </div>
 
-            <article class="project-card">
-                <div class="project-top">
-                    <span class="project-number">PROJECT 05</span>
-                    <span class="project-status">Live</span>
-                </div>
-                <h3>TechStart Agency</h3>
-                <p>A dark premium agency website concept featuring services, pricing, projects and contact sections.</p>
-                <div class="project-tags">
-                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                </div>
-                <a class="project-link" href="https://nirajsuthar0710.github.io/tech.agency/" target="_blank" rel="noopener noreferrer">Visit Live Website ↗</a>
-            </article>
+      <div class="github-cta glass-card reveal">
+        <div><p class="eyebrow">MORE ON GITHUB</p><h3>Explore what I'm building next.</h3></div>
+        <a href="https://github.com/nirajsuthar0710" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visit GitHub ↗</a>
+      </div>
+    </section>
 
-        </div>
-
-        <div class="github-cta">
-            <p>Want to follow my coding journey?</p>
-            <a class="btn" href="https://github.com/nirajsuthar0710"
-               target="_blank" rel="noopener noreferrer">
-                Explore My GitHub ↗
-            </a>
-        </div>
-    </div>
-</section>
-
-<section id="goals">
-    <div class="container">
+    <section class="section container" id="goals">
+      <div class="section-heading reveal">
         <p class="eyebrow">MY DIRECTION</p>
-        <h2>Goals &amp; Vision</h2>
-        <div class="goals-grid">
-            <article class="goal-card">
-                <div class="skill-icon">📚</div>
-                <h3>Keep Learning</h3>
-                <p>Strengthen my fundamentals and learn new web development concepts.</p>
-            </article>
-            <article class="goal-card">
-                <div class="skill-icon">💻</div>
-                <h3>Build Projects</h3>
-                <p>Create useful websites and improve my coding skills through practice.</p>
-            </article>
-            <article class="goal-card">
-                <div class="skill-icon">🚀</div>
-                <h3>Grow Professionally</h3>
-                <p>Develop a strong portfolio and learn how to work on real-world projects.</p>
-            </article>
-        </div>
-    </div>
-</section>
+        <h2>Goals & <span class="gradient-text">Vision</span></h2>
+        <p>Small steps today, better possibilities tomorrow.</p>
+      </div>
 
-<section id="contact">
-    <div class="container">
+      <div class="goals-grid">
+        <article class="goal-card glass-card reveal"><span>01</span><div class="goal-icon">📚</div><h3>Keep Learning</h3><p>Strengthen my fundamentals and explore new web development concepts.</p></article>
+        <article class="goal-card glass-card reveal"><span>02</span><div class="goal-icon">💻</div><h3>Build Projects</h3><p>Create useful websites and improve my skills through practical work.</p></article>
+        <article class="goal-card glass-card reveal"><span>03</span><div class="goal-icon">🚀</div><h3>Grow Professionally</h3><p>Develop a strong portfolio and understand real-world project work.</p></article>
+      </div>
+    </section>
+
+    <section class="contact-section container" id="contact">
+      <div class="contact-card reveal">
         <p class="eyebrow">LET'S CONNECT</p>
-        <h2>Contact Me</h2>
-        <p>Want to explore my projects or follow my learning journey? Connect with me through GitHub.</p>
-        <a class="btn" href="https://github.com/nirajsuthar0710"
-           target="_blank" rel="noopener noreferrer">
-            Connect on GitHub ↗
-        </a>
+        <h2>Have an idea? <span class="gradient-text">Let's explore it.</span></h2>
+        <p>Want to explore my projects or follow my learning journey? Find me on GitHub.</p>
+        <a href="https://github.com/nirajsuthar0710" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Connect on GitHub ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">NS<span>.</span></a>
+      <p>© <span id="currentYear"></span> Neeraj Suthar. Built with care.</p>
+      <span class="footer-tagline">Learn · Build · Grow</span>
+      <a href="#home" class="back-top">Back to top ↑</a>
     </div>
-</section>
+  </footer>
 
-</main>
-
-<footer>
-    <div class="container">
-        <p>© <span id="current-year">2026</span> Neeraj Suthar. Built with care.</p>
-        <p class="footer-tagline">Learn • Build • Grow</p>
-        <a href="#home">Back to Top ↑</a>
-    </div>
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
